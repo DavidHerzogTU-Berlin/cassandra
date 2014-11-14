@@ -4,29 +4,7 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  */
 package org.apache.cassandra.thrift;
-/*
- * 
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- * 
- *   http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- * 
- */
 
-
-import org.apache.commons.lang.builder.HashCodeBuilder;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -378,24 +356,7 @@ public class ColumnPath implements org.apache.thrift.TBase<ColumnPath, ColumnPat
 
   @Override
   public int hashCode() {
-    HashCodeBuilder builder = new HashCodeBuilder();
-
-    boolean present_column_family = true && (isSetColumn_family());
-    builder.append(present_column_family);
-    if (present_column_family)
-      builder.append(column_family);
-
-    boolean present_super_column = true && (isSetSuper_column());
-    builder.append(present_super_column);
-    if (present_super_column)
-      builder.append(super_column);
-
-    boolean present_column = true && (isSetColumn());
-    builder.append(present_column);
-    if (present_column)
-      builder.append(column);
-
-    return builder.toHashCode();
+    return 0;
   }
 
   public int compareTo(ColumnPath other) {

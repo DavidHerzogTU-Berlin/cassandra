@@ -114,7 +114,9 @@ struct ColumnOrSuperColumn {
     1: optional Column column,
     2: optional SuperColumn super_column,
     3: optional CounterColumn counter_column,
-    4: optional CounterSuperColumn counter_super_column
+    4: optional CounterSuperColumn counter_super_column,
+    5: optional i64 qsz,
+    6: optional i64 mu
 }
 
 
